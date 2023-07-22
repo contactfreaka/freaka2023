@@ -1,0 +1,17 @@
+[
+    {
+        "pin": [400001, 400002, 400003, 400004],
+        "status": "Delivery available! Shipping charges updated.",
+        "delivery": 100
+    },
+    {
+        "pin": [400011, 400012, 400013, 400014],
+        "status": "Delivery available! Shipping charges updated.",
+        "delivery": 200
+    },
+    {
+        "pin": [140604],
+        "status": "Delivery available! Shipping charges updated.",
+        "delivery": 50
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1001,
+        "title": "Energ Bites (150gm)",
+        "image": "https://ik.imagekit.io/kzzakkvwc/Image_for_150gm.jpg?updatedAt=1687698475233",
+        "price": 275
+    },
+    {
+        "id": 1002,
+        "title": "Energ Bites (300gm)",
+        "image": "https://ik.imagekit.io/kzzakkvwc/Image_for_300gm.jpg?updatedAt=1687698957950",
+        "price": 485
+    }
+]

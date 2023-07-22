@@ -1,0 +1,150 @@
+[
+    {
+      "State": "Jammu & Kashmir",
+      "State code": "01"
+    },
+    {
+      "State": "Himachal Pradesh",
+      "State code": "02"
+    },
+    {
+      "State": "Punjab",
+      "State code": "03"
+    },
+    {
+      "State": "Chandigarh",
+      "State code": "04"
+    },
+    {
+      "State": "Uttarakhand",
+      "State code": "05"
+    },
+    {
+      "State": "Haryana",
+      "State code": "06"
+    },
+    {
+      "State": "Delhi",
+      "State code": "07"
+    },
+    {
+      "State": "Rajasthan",
+      "State code": "08"
+    },
+    {
+      "State": "Uttar Pradesh",
+      "State code": "09"
+    },
+    {
+      "State": "Bihar",
+      "State code": 10
+    },
+    {
+      "State": "Sikkim",
+      "State code": 11
+    },
+    {
+      "State": "Arunachal Pradesh",
+      "State code": 12
+    },
+    {
+      "State": "Nagaland",
+      "State code": 13
+    },
+    {
+      "State": "Manipur",
+      "State code": 14
+    },
+    {
+      "State": "Mizoram",
+      "State code": 15
+    },
+    {
+      "State": "Tripura",
+      "State code": 16
+    },
+    {
+      "State": "Meghalaya",
+      "State code": 17
+    },
+    {
+      "State": "Assam",
+      "State code": 18
+    },
+    {
+      "State": "West Bengal",
+      "State code": 19
+    },
+    {
+      "State": "Jharkhand",
+      "State code": 20
+    },
+    {
+      "State": "Orissa",
+      "State code": 21
+    },
+    {
+      "State": "Chhattisgarh",
+      "State code": 22
+    },
+    {
+      "State": "Madhya Pradesh",
+      "State code": 23
+    },
+    {
+      "State": "Gujarat",
+      "State code": 24
+    },
+    {
+      "State": "Daman & Diu",
+      "State code": 25
+    },
+    {
+      "State": "Dadra & Nagar Haveli",
+      "State code": 26
+    },
+    {
+      "State": "Maharashtra",
+      "State code": 27
+    },
+    {
+      "State": "Karnataka",
+      "State code": 29
+    },
+    {
+      "State": "Goa",
+      "State code": 30
+    },
+    {
+      "State": "Lakshadweep",
+      "State code": 31
+    },
+    {
+      "State": "Kerala",
+      "State code": 32
+    },
+    {
+      "State": "Tamil Nadu",
+      "State code": 33
+    },
+    {
+      "State": "Puducherry",
+      "State code": 34
+    },
+    {
+      "State": "Andaman & Nicobar Islands",
+      "State code": 35
+    },
+    {
+      "State": "Telengana",
+      "State code": 36
+    },
+    {
+      "State": "Andhra Pradesh",
+      "State code": 37
+    },
+    {
+      "State": "Other Territory",
+      "State code": 97
+    }
+]

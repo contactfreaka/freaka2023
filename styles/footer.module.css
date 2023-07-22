@@ -1,0 +1,60 @@
+.footer {
+  background: rgba(168, 188, 161, 0.3);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5vmax;
+  padding-bottom: 5vmax;
+}
+.logo-link {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.links {
+  padding-top: 2vmax;
+  display: flex;
+  gap: 1vmax;
+}
+.contact-heading,
+.quick-links-heading {
+  font-family: Inter;
+  font-size: 1.4vmax;
+  padding-bottom: 2vmax;
+}
+.text {
+  font-size: 1vmax;
+  font-family: Inter;
+  padding-bottom: 1vmax;
+}
+.text1 {
+  font-size: 1vmax;
+  font-family: Inter;
+  padding-bottom: 0.5vmax;
+}
+.mail-link {
+  all: unset;
+  cursor: pointer;
+  font-size: 1vmax;
+  font-family: Inter;
+  padding-bottom: 0.5vmax;
+}
+.logo {
+  border-radius: 50%;
+}
+@media (width < 600px) {
+  .logo-link {
+    width: 15%;
+  }
+  .contact-heading {
+    font-size: 1.9vmax;
+  }
+  .quick-links-heading {
+    font-size: 1.6vmax;
+  }
+  .text1,
+  .text,
+  .mail-link {
+    font-size: 1.3vmax;
+  }
+}

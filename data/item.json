@@ -1,0 +1,40 @@
+[
+    {
+        "id": 3001,
+        "code": 1001,
+        "title": "Energ Bites (150gm)",
+        "image": [
+            "https://ik.imagekit.io/kzzakkvwc/IMG_4400_copy.png?updatedAt=1687689335790",
+            "https://ik.imagekit.io/kzzakkvwc/IMG_4395_copy.png?updatedAt=1687689335040",
+            "https://ik.imagekit.io/kzzakkvwc/IMG_0040.jpg?updatedAt=1687689508423",
+            "https://ik.imagekit.io/kzzakkvwc/IMG_4508_copy.png?updatedAt=1687689334619",
+            "https://ik.imagekit.io/kzzakkvwc/Copy_of_IMG_4590_copy.jpg?updatedAt=1687689334612",
+            "https://ik.imagekit.io/kzzakkvwc/Image_for_front_view__of_product.png?updatedAt=1687699108667",
+            "https://ik.imagekit.io/kzzakkvwc/Image_for_ingredient_information.png?updatedAt=1687699108685",
+            "https://ik.imagekit.io/kzzakkvwc/Image_for_nutritional_information.png?updatedAt=1687699200041"
+        ],
+        "description": "A delicious fusion of all things yummy and nutritious. Each mouthful is intended to increase your energy levels, keep you satisfied, yet leave you wanting for more.",
+        "ingredients": "Coconut, Dates, Dry fruits",
+        "details": "<b>Best part:</b><ul><li>- Dairy Free</li><li>- Preservative Free</li><li>- No added Sugar</li><li>- No added Oil</li></ul><br/><b>Who can consume:</b> Absolutely anyone!<br/><br/>Our energy bites are perfect for :<ul><li>- Pre or post workout snack</li><li>- Busy professionals</li><li>- Growing children</li><li>- Senior citizens</li><li>- Overworked moms & housewives</li></ul><br/><b>Caution:</b> Contains nuts and seeds; diabetic patients should restrict consumption to one bite per day or consult the doctor before consuming<br/><b>Storage Instructions: </b>Keep the box in the refrigerator for at least two hours after you receive it. The energy bites should generally be kept in the refrigerator because they contain natural oil that will discharge if not (especially in humid areas/climates).",
+        "price": 275
+    },
+    {
+        "id": 3002,
+        "code": 1002,
+        "title": "Energ Bites (300gm)",
+        "image": [
+            "https://ik.imagekit.io/kzzakkvwc/IMG_4400_copy.png?updatedAt=1687689335790",
+            "https://ik.imagekit.io/kzzakkvwc/IMG_4395_copy.png?updatedAt=1687689335040",
+            "https://ik.imagekit.io/kzzakkvwc/IMG_0040.jpg?updatedAt=1687689508423",
+            "https://ik.imagekit.io/kzzakkvwc/IMG_4508_copy.png?updatedAt=1687689334619",
+            "https://ik.imagekit.io/kzzakkvwc/Copy_of_IMG_4590_copy.jpg?updatedAt=1687689334612",
+            "https://ik.imagekit.io/kzzakkvwc/Image_for_front_view__of_product.png?updatedAt=1687699108667",
+            "https://ik.imagekit.io/kzzakkvwc/Image_for_ingredient_information.png?updatedAt=1687699108685",
+            "https://ik.imagekit.io/kzzakkvwc/Image_for_nutritional_information.png?updatedAt=1687699200041"
+        ],
+        "description": "A delicious fusion of all things yummy and nutritious. Each mouthful is intended to increase your energy levels, keep you satisfied, yet leave you wanting for more.",
+        "ingredients": "Coconut, Dates, Dry fruits",
+        "details": "<b>Best part:</b><ul><li>- Dairy Free</li><li>- Preservative Free</li><li>- No added Sugar</li><li>- No added Oil</li></ul><br/><b>Who can consume:</b> Absolutely anyone!<br/><br/>Our energy bites are perfect for :<ul><li>- Pre or post workout snack</li><li>- Busy professionals</li><li>- Growing children</li><li>- Senior citizens</li><li>- Overworked moms & housewives</li></ul><br/><b>Caution:</b> Contains nuts and seeds; diabetic patients should restrict consumption to one bite per day or consult the doctor before consuming<br/><b>Storage Instructions: </b>Keep the box in the refrigerator for at least two hours after you receive it. The energy bites should generally be kept in the refrigerator because they contain natural oil that will discharge if not (especially in humid areas/climates).",
+        "price": 485
+    }
+]

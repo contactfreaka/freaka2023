@@ -1,0 +1,25 @@
+{
+  "name": "freaka",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "eslint": "8.37.0",
+    "eslint-config-next": "13.2.4",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "react-modal": "^3.16.1",
+    "react-player": "^2.12.0",
+    "react-slideshow-image": "^4.2.1",
+    "to-words": "^3.5.1"
+  }
+}

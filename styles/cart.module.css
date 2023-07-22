@@ -1,0 +1,72 @@
+.payment {
+  font-size: 1vmax;
+  font-family: Inter;
+}
+.empty-heading {
+  padding-top: 0.5vmax;
+  font-size: 2.5vmax;
+  font-weight: 700;
+  color: #333333;
+}
+.empty-text {
+  font-size: 1vmax;
+  font-family: Inter;
+  padding: 1vmax 0;
+}
+.heading {
+  padding-bottom: 0.5vmax;
+  font-size: 1.5vmax;
+  font-weight: 700;
+  color: #333333;
+}
+.pincode-container {
+  border: 1px solid #828282;
+  border-radius: 5px;
+  padding: 1vmax;
+}
+.pincode-text {
+  font-size: 1vmax;
+  font-family: Inter;
+  padding: 0 0 2vmax 0;
+}
+.pincode-status {
+  padding-top: 0.5vmax;
+  font-size: 1vmax;
+  font-family: Inter;
+  color: gray;
+}
+.text {
+  font-size: 1vmax;
+  font-family: Inter;
+  padding: 0 0 1vmax 0;
+}
+@media (width < 750px) {
+  .empty-heading {
+    font-size: 2.8vmax;
+  }
+  .payment,
+  .text,
+  .pincode-status,
+  .pincode-text,
+  .empty-text {
+    font-size: 1.3vmax;
+  }
+  .heading {
+    font-size: 1.8vmax;
+  }
+}
+@media (width < 600px) {
+  .empty-heading {
+    font-size: 3vmax;
+  }
+  .payment,
+  .text,
+  .pincode-status,
+  .pincode-text,
+  .empty-text {
+    font-size: 1.5vmax;
+  }
+  .heading {
+    font-size: 2vmax;
+  }
+}

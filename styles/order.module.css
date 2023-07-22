@@ -1,0 +1,27 @@
+.heading {
+  font-size: 2.4vmax;
+  font-weight: 700;
+  font-family: Inter;
+}
+.description {
+  font-size: 1vmax;
+  font-family: Inter;
+  margin: 0 24vmax;
+}
+@media (width < 750px) {
+  .heading {
+    font-size: 2.7vmax;
+  }
+  .description {
+    font-size: 1.3vmax;
+  }
+}
+@media (width < 600px) {
+  .heading {
+    font-size: 2.9vmax;
+  }
+  .description {
+    font-size: 1.5vmax;
+    margin: 0 2vmax;
+  }
+}
