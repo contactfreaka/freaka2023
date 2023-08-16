@@ -110,7 +110,7 @@ function Checkout() {
       .join("&");
   };
 
-  async function getPDF() {
+  useEffect(() => {
     const element = invoice.current;
     const canvas = await html2canvas(element);
     const data = canvas.toDataURL("image/png");
@@ -121,11 +121,8 @@ function Checkout() {
     const pdfHeight =
       (imgProperties.height * pdfWidth) / imgProperties.width;
     pdf.addImage(data, "PNG", 0, 0, pdfWidth, pdfHeight, undefined, "FAST");
-    return pdf.output();
-  }
-
-  useEffect(() => {
-    setPDFData(getPDF);
+    var temp = pdf.output();
+    setPDFData(temp);
   }, [lname, fname, email, phone, addr1, addr2, city, pincode, cartData, taxes, supplyState]);
 
   const handleSubmit = async (event) => {
