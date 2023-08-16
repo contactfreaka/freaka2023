@@ -40,9 +40,6 @@ function Checkout() {
       }
     });
   }, [supplyState]);
-  useEffect(() => {
-    setPDFData(getPDF);
-  }, [handleSubmit]);
 
   const customStyles = {
     content: {
@@ -112,9 +109,28 @@ function Checkout() {
       )
       .join("&");
   };
+
+  async function getPDF() {
+    const element = invoice.current;
+    const canvas = await html2canvas(element);
+    const data = canvas.toDataURL("image/png");
+
+    const pdf = new jsPDF();
+    const imgProperties = pdf.getImageProperties(data);
+    const pdfWidth = pdf.internal.pageSize.getWidth();
+    const pdfHeight =
+      (imgProperties.height * pdfWidth) / imgProperties.width;
+    pdf.addImage(data, "PNG", 0, 0, pdfWidth, pdfHeight, undefined, "FAST");
+    return pdf.output();
+  }
+
+  useEffect(() => {
+    setPDFData(getPDF);
+  }, [lname, fname, email, phone, addr1, addr2, city, pincode, cartData, taxes, supplyState]);
+
   const handleSubmit = async (event) => {
     event.preventDefault();
-    setPDFData(getPDF);
+    console.log(PDFData);
 
     fetch("/", {
       method: "POST",
@@ -154,20 +170,6 @@ function Checkout() {
   };
 
   const toWords = new ToWords();
-
-  async function getPDF() {
-    const element = invoice.current;
-    const canvas = await html2canvas(element);
-    const data = canvas.toDataURL("image/png");
-
-    const pdf = new jsPDF();
-    const imgProperties = pdf.getImageProperties(data);
-    const pdfWidth = pdf.internal.pageSize.getWidth();
-    const pdfHeight =
-      (imgProperties.height * pdfWidth) / imgProperties.width;
-    pdf.addImage(data, "PNG", 0, 0, pdfWidth, pdfHeight, undefined, "FAST");
-    return pdf.output();
-  }
 
   return (
     <>
