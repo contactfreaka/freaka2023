@@ -21,6 +21,7 @@ function Checkout() {
   const [subtotal, setSubtotal] = useState(0);
   const [taxes, setTaxes] = useState(0);
   const [cartData, setCartData] = useState("");
+  const [PDFData, setPDFData] = useState("");
 
   const [supplyState, setSupplyState] = useState("");
   const [supplyStateCode, setSupplyStateCode] = useState("");
@@ -110,7 +111,7 @@ function Checkout() {
   };
   const handleSubmit = async (event) => {
     event.preventDefault();
-    var PDFdata = getPDF();
+    setPDFData(getPDF);
 
     fetch("/", {
       method: "POST",
@@ -129,7 +130,7 @@ function Checkout() {
         pincode,
         cartData,
         taxes,
-        "pdfData" : PDFdata
+        PDFData
       }),
     })
       .then(async () => {
@@ -162,8 +163,7 @@ function Checkout() {
     const pdfHeight =
       (imgProperties.height * pdfWidth) / imgProperties.width;
     pdf.addImage(data, "PNG", 0, 0, pdfWidth, pdfHeight, undefined, "FAST");
-    console.log(pdf);
-    return pdf;
+    return pdf.output();
   }
 
   return (
@@ -304,6 +304,13 @@ function Checkout() {
                 type="text"
                 name="supplyState"
                 value={supplyState}
+                style={{ display: "none" }}
+                disabled
+              />
+              <input
+                type="text"
+                name="PDFData"
+                value={PDFData}
                 style={{ display: "none" }}
                 disabled
               />
