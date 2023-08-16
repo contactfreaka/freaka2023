@@ -40,6 +40,9 @@ function Checkout() {
       }
     });
   }, [supplyState]);
+  useEffect(() => {
+    setPDFData(getPDF);
+  }, [handleSubmit]);
 
   const customStyles = {
     content: {
