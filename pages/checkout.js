@@ -121,6 +121,7 @@ function Checkout() {
     const pdfHeight =
       (imgProperties.height * pdfWidth) / imgProperties.width;
     pdf.addImage(data, "PNG", 0, 0, pdfWidth, pdfHeight, undefined, "FAST");
+    console.log(typeof pdf);
     var temp = pdf.output('blob');
     return temp;
   }
@@ -128,7 +129,7 @@ function Checkout() {
   useEffect(() => {
     getPDF().then(res => {
       //console.log(res);
-      var temp = res;
+      var temp = JSON.stringify(res);
       setPDFData(temp);
     })
   }, [lname, fname, email, phone, addr1, addr2, city, pincode, cartData, taxes, supplyState]);
