@@ -110,7 +110,7 @@ function Checkout() {
   };
   const handleSubmit = async (event) => {
     event.preventDefault();
-    getPDF();
+    var PDFdata = getPDF();
 
     fetch("/", {
       method: "POST",
@@ -129,7 +129,7 @@ function Checkout() {
         pincode,
         cartData,
         taxes,
-        pdfData
+        "pdfData" : PDFdata
       }),
     })
       .then(async () => {
@@ -162,7 +162,8 @@ function Checkout() {
     const pdfHeight =
       (imgProperties.height * pdfWidth) / imgProperties.width;
     pdf.addImage(data, "PNG", 0, 0, pdfWidth, pdfHeight, undefined, "FAST");
-    return pdf.output();
+    console.log(pdf);
+    return pdf;
   }
 
   return (
@@ -303,14 +304,6 @@ function Checkout() {
                 type="text"
                 name="supplyState"
                 value={supplyState}
-                style={{ display: "none" }}
-                disabled
-              />
-              <input
-                type="file"
-                accept=".pdf"
-                value={getPDF}
-                name="pdfData"
                 style={{ display: "none" }}
                 disabled
               />
