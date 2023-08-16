@@ -121,12 +121,13 @@ function Checkout() {
     const pdfHeight =
       (imgProperties.height * pdfWidth) / imgProperties.width;
     pdf.addImage(data, "PNG", 0, 0, pdfWidth, pdfHeight, undefined, "FAST");
-    var temp = pdf.output();
+    var temp = pdf.output('blob');
     return temp;
   }
 
   useEffect(() => {
     getPDF().then(res => {
+      //console.log(res);
       var temp = res;
       setPDFData(temp);
     })
