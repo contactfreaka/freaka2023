@@ -108,8 +108,9 @@ function Checkout() {
       )
       .join("&");
   };
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
+    getPDF();
 
     fetch("/", {
       method: "POST",
@@ -128,6 +129,7 @@ function Checkout() {
         pincode,
         cartData,
         taxes,
+        pdfData
       }),
     })
       .then(async () => {
@@ -148,6 +150,20 @@ function Checkout() {
   };
 
   const toWords = new ToWords();
+
+  async function getPDF() {
+    const element = invoice.current;
+    const canvas = await html2canvas(element);
+    const data = canvas.toDataURL("image/png");
+
+    const pdf = new jsPDF();
+    const imgProperties = pdf.getImageProperties(data);
+    const pdfWidth = pdf.internal.pageSize.getWidth();
+    const pdfHeight =
+      (imgProperties.height * pdfWidth) / imgProperties.width;
+    pdf.addImage(data, "PNG", 0, 0, pdfWidth, pdfHeight, undefined, "FAST");
+    return pdf.output();
+  }
 
   return (
     <>
@@ -171,7 +187,7 @@ function Checkout() {
               onSubmit={handleSubmit}
               data-netlify="true"
             >
-              <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="form-name" enctype="multipart/form-data" value="contact" />
               <div className={styles["input-row"]}>
                 <div className={styles["row-item"]}>
                   <p className={styles["input-title"]}>First name</p>
@@ -287,6 +303,14 @@ function Checkout() {
                 type="text"
                 name="supplyState"
                 value={supplyState}
+                style={{ display: "none" }}
+                disabled
+              />
+              <input
+                type="file"
+                accept=".pdf"
+                value={getPDF}
+                name="pdfData"
                 style={{ display: "none" }}
                 disabled
               />
